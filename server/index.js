@@ -7,7 +7,11 @@ app.use(express.json());
 app.use(cors());
 
 
-//routes
+//ROUTES
+
+//reg and login routes
+app.use("/auth", require("./routes/auth"));
+
 app.listen(5001, () => {
     console.log("server is running on port 5001");
 })
