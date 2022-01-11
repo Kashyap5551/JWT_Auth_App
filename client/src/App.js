@@ -1,5 +1,4 @@
-import React, { Fragment , useState } from 'react';
-import './App.css';
+import React, { Fragment, useState, useEffect } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -21,6 +20,23 @@ function App() {
   const setAuth = boolean => {
     setAuthenticated(boolean);
   }
+  async function isAuth() {
+    try {
+       const res = await fetch("http://localhost:5001/auth/verify", {
+        method: "POST",
+        headers: { jwt_token: localStorage.token }
+       });
+      
+        const parseRes = await res.json();
+
+      parseRes === true ? setAuthenticated(true) : setAuthenticated(false);
+    } catch (err) {
+      console.error(err.message);
+    }
+  }
+  useEffect(() => {
+    isAuth()
+  }, [])
 
   return (
     <Fragment>
