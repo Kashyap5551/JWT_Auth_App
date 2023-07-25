@@ -75,4 +75,4 @@ We welcome contributions to enhance the JWT-Auth-App. If you find any issues or 
 
 ## License
 
-The content of this project is licensed under the GNU license. Feel free to reuse and modify the code, but please provide attribution.
+The content of this project is licensed under the MIT license. Feel free to reuse and modify the code, but please provide attribution.
