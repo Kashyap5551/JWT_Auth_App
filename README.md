@@ -45,7 +45,7 @@ To set up the project locally, follow these steps:
 npm install
 ```
 
-##Usage
+## Usage
 
 To run the application locally, follow these steps:
 
@@ -63,16 +63,16 @@ npm run client
 
 The application will be accessible in your browser at http://localhost:3000.
 
-##Deployment
+## Deployment
 
 The JWT-Auth-App is deployed on Heroku. Any changes pushed to the main branch will trigger an automatic deployment to the live environment. (Heroku stopped its free tier, hence the deployment has been deprecated)
 
 
-##Contributing
+## Contributing
 
 We welcome contributions to enhance the JWT-Auth-App. If you find any issues or have ideas for improvements, feel free to open an issue or submit a pull request.
 
 
-##License
+## License
 
 The content of this project is licensed under the GNU license. Feel free to reuse and modify the code, but please provide attribution.
